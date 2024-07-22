@@ -1,5 +1,6 @@
 package com.example.foodapp.Activity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -28,18 +29,14 @@ public class IntroActivity extends BaseActivity {
     }
 
     private void setVariable() {
-        binding.login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
+        binding.login.setOnClickListener(view -> {
+            if(mAuth.getCurrentUser() != null){
+                startActivity(new Intent(IntroActivity.this, MainActivity.class));
+            }else{
+                startActivity(new Intent(IntroActivity.this, LoginActivity.class));
             }
         });
 
-        binding.signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
+        binding.signup.setOnClickListener(view -> startActivity(new Intent(IntroActivity.this, SignupActivity.class)));
     }
 }

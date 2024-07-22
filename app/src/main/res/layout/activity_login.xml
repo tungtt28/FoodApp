@@ -104,7 +104,7 @@
                 android:layout_height="wrap_content"
                 android:text="Login"
                 android:background="@drawable/red_button_background"
-                android:layout_margin="32dp"
+                android:layout_margin="22dp"
                 style="@android:style/Widget.Button"
                 android:textColor="@color/white"
                 android:textSize="16sp"
@@ -131,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:text="OR"
                     android:textSize="18sp"
-                    android:layout_margin="8dp"/>
+                    android:layout_margin="5dp"/>
 
                 <View
                     android:id="@+id/view2"
@@ -145,7 +145,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp"
+                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -174,6 +174,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:layout_margin="10dp"
                 android:orientation="horizontal">
 
                 <TextView

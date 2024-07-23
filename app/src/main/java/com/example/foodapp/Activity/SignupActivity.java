@@ -26,7 +26,6 @@ public class SignupActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivitySignupBinding.inflate(getLayoutInflater());
-
         setContentView(binding.getRoot());
 
         setVariable();

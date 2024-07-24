@@ -47,13 +47,12 @@
                     android:id="@+id/logoutBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="295dp"
-                    android:layout_marginTop="7dp"
-                    android:layout_marginEnd="1dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/logout"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView10"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@drawable/logout" />
+                    app:layout_constraintVertical_bias="0.466" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -71,7 +70,7 @@
                     android:layout_marginEnd="6dp"
                     android:background="@drawable/gray_background"
                     android:padding="12dp"
-                    tools:srcCompat="@drawable/settings" />
+                    android:src="@drawable/settings" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -102,7 +101,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:padding="4dp"
-                        tools:srcCompat="@drawable/search_icon" />
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/search_icon" />
                 </LinearLayout>
 
                 <ImageView
@@ -112,7 +112,7 @@
                     android:layout_marginStart="6dp"
                     android:background="@drawable/gray_background"
                     android:padding="12dp"
-                    tools:srcCompat="@drawable/basket" />
+                    android:src="@drawable/basket" />
             </LinearLayout>
 
             <LinearLayout
@@ -137,7 +137,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
-                        tools:srcCompat="@drawable/location" />
+                        android:src="@drawable/location" />
 
                     <Spinner
                         android:id="@+id/locationSp"
@@ -163,7 +163,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
-                        tools:srcCompat="@drawable/time" />
+                        android:src="@drawable/time" />
 
                     <Spinner
                         android:id="@+id/timeSp"
@@ -188,7 +188,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_marginStart="8dp"
-                        tools:srcCompat="@drawable/dollar" />
+                        android:src="@drawable/dollar" />
 
                     <Spinner
                         android:id="@+id/priceSp"
@@ -202,7 +202,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp">
 

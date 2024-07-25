@@ -1,6 +1,7 @@
 package com.example.foodapp.Activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 
 import androidx.activity.EdgeToEdge;
@@ -39,10 +40,9 @@ public class MainActivity extends BaseActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
                     for(DataSnapshot issue : snapshot.getChildren()){
-
                         list.add(issue.getValue(Location.class));
+                        Log.d(TAG, issue.getValue(Location.class).toString());
                     }
-
                     ArrayAdapter<Location> adapter = new ArrayAdapter<>(MainActivity.this,R.layout.sp_item, list);
                     adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     binding.locationSp.setAdapter(adapter);

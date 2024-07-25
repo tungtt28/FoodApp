@@ -41,7 +41,8 @@ public class BestFoodsAdapter extends RecyclerView.Adapter<BestFoodsAdapter.View
         holder.timeTxt.setText(items.get(position).getTimeValue()+" min");
         holder.priceTxt.setText("$"+items.get(position).getPrice());
 
-        Glide.with(context).load(items.get(position).getImagePath())
+        Glide.with(context)
+                .load(items.get(position).getImagePath())
                 .transform(new CenterCrop(), new RoundedCorners(30))
                 .into(holder.pic);
     }
